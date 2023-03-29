@@ -21,6 +21,6 @@ resource "aws_instance" "myapp-server" {
   associate_public_ip_address = true
   user_data                   = file("jenkins-server-script.sh")
   tags = {
-    Name = "${var.env_prefix}-server"
+    Name = "${var.env_prefix}-CICD-server"
   }
 }
